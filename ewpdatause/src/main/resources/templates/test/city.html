@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>cityAQI</title>
+    <link rel="stylesheet" href="../../static/css/test.css" th:href="@{/css/test.css}">
+</head>
+<body>
+<div class="title">
+    <tr>省份</tr>
+    <tr>城市</tr>
+    <tr>AQI</tr>
+    <tr>AQILEVEL</tr>
+    <tr>PM25</tr>
+    <tr>首要污染物</tr>
+</div>
+<div>
+    <td th:text="${cityData.SF}">未知</td>
+    <td th:text="${cityData.CITY}">未知</td>
+    <td th:text="${cityData.AQI}">未知</td>
+    <td th:text="${cityData.AQILEVEL}">未知</td>
+    <td th:text="${cityData.PM25}">未知</td>
+    <td th:text="${cityData.THEFIRST}">未知</td>
+</div>
+</body>
+</html>

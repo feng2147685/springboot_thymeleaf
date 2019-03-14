@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yutu.mapper.TestMapper" >
+
+    <select id="queryDataById" resultType="map" >
+        select * from T_BASE_AIRQUALITY168 where UUID=#{id}
+    </select>
+    <select id="queryDataBySF" resultType="map" >
+        select * from T_BASE_AIRQUALITY168 where sf=#{sf}
+    </select>
+</mapper>
